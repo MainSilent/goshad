@@ -7,8 +7,10 @@
 
 (function($) {
     "use strict"; 
-    $("nav, header").hide()
-	
+	document.onreadystatechange = function(e)
+    {
+        $("nav, header").hide()
+    }
 	/* Preloader */
 	$(window).on('load', function() {
 		var preloaderFadeOutTime = 500;
