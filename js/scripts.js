@@ -16,9 +16,10 @@
 			var preloader = $('.spinner-wrapper');
 			setTimeout(function() {
 				preloader.fadeOut(preloaderFadeOutTime);
+                $("nav, header").show();
 			}, 500);
 		}
 		hidePreloader();
-        $("nav, header").show()
 	});
+
 })(jQuery);
