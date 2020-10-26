@@ -7,6 +7,7 @@
 
 (function($) {
     "use strict"; 
+    $("nav, header").hide()
 	
 	/* Preloader */
 	$(window).on('load', function() {
@@ -18,6 +19,6 @@
 			}, 500);
 		}
 		hidePreloader();
+        $("nav, header").show()
 	});
-
 })(jQuery);
